@@ -1,0 +1,26 @@
+<war>
+	<missileLaunchers>
+		<launcher id="L101" isHidden="false">
+			<missile id="M1" destination="Sderot" launchTime="2" flyTime="120" damage="1500"/>
+			<missile id="M2" destination="Beer-Sheva" launchTime="5" flyTime="200" damage="2000"/>
+		</launcher>
+		<launcher id="L102" isHidden="true">
+			<missile id="M3" destination="Ofakim" launchTime="4" flyTime="200" damage="5000"/>
+			<missile id="M4" destination="Beer-Sheva" launchTime="9" flyTime="7" damage="1000"/>
+		</launcher>
+	</missileLaunchers>
+	<missileDestructors>
+		<destructor id="D201">
+		</destructor>
+		<destructor id="D202">
+		</destructor>
+	</missileDestructors>
+	<missileLauncherDestructors>
+		<destructor type="plane">
+		</destructor>
+		<destructor type="ship">
+			<destructedLanucher id="L102" destructTime="8"/>
+			<destructedLanucher id="L102" destructTime="12"/>
+		</destructor>
+	</missileLauncherDestructors>
+</war>
